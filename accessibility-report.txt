@@ -1,0 +1,34 @@
+
+ACCESSIBILITY AUDIT REPORT
+
+Project: Student Activity Management Portal
+
+Tool Used: Google Chrome Lighthouse
+
+Checks Performed:
+1. Proper heading hierarchy.
+2. Semantic HTML elements.
+3. Labels for all form fields.
+4. Keyboard accessibility.
+5. Form input validation.
+6. Page title and metadata.
+7. Accessibility of navigation links.
+
+Observations:
+The webpage uses semantic HTML elements.
+All form fields have proper labels.
+Navigation links are keyboard accessible.
+Required fields are validated by the browser.
+
+Lighthouse Accessibility Score: ______
+
+Errors Found: ______
+
+Corrections Made:
+1. Added missing labels wherever required.
+2. Improved keyboard focus visibility.
+3. Corrected accessibility issues.
+
+Conclusion:
+The webpage was tested using Lighthouse
+to identify and correct accessibility issues.

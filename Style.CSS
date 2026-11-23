@@ -1,93 +1,151 @@
+
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background-color: #f2f5f9;
-    color: #222;
+    background-color: #f2f4fa;
+    color: #333;
     line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: #1f4e79;
+    background: linear-gradient(135deg, #172b4d, #354f80);
     color: white;
-    padding: 15px 30px;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+    color: #dce5f5;
+}
+
+/* Navigation */
+nav {
+    margin-top: 20px;
 }
 
 nav a {
     color: white;
-    margin-right: 20px;
+    margin: 12px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
+nav a:hover {
+    color: #ffd580;
+    text-decoration: underline;
+}
+
+/* Main Content */
 main {
-    padding: 20px 30px;
+    padding: 25px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-article {
+/* Sections and Cards */
+section, article, aside {
     background-color: white;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    border-left: 5px solid #1f4e79;
+    padding: 22px;
+    margin: 18px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
 }
 
+/* Headings */
+h2 {
+    color: #243b64;
+    font-size: 24px;
+    border-left: 4px solid #718ac2;
+    padding-left: 12px;
+}
+
+h3 {
+    color: #405b88;
+    font-size: 19px;
+}
+
+/* Lists */
+li {
+    margin: 8px 0;
+}
+
+/* Registration Form */
 form {
-    background-color: white;
-    padding: 20px;
-    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    padding: 11px;
+    margin-bottom: 10px;
+    border: 1px solid #cbd2df;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+fieldset {
+    border: 1px solid #cbd2df;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
 fieldset label {
-    display: inline;
-    font-weight: normal;
-    margin-right: 10px;
+    display: block;
+    margin: 8px 0;
 }
 
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    box-sizing: border-box;
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
 }
 
+/* Button */
 button {
-    background-color: #1f4e79;
+    background-color: #304d7c;
     color: white;
+    padding: 13px;
     border: none;
-    padding: 10px 20px;
-    margin-top: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
 }
 
-/* Shows a clear outline when using the keyboard (accessibility) */
-a:focus,
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-    outline: 3px solid orange;
+button:hover {
+    background-color: #1d3459;
 }
 
-#result {
-    color: green;
-    font-weight: bold;
+/* Keyboard Accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #e6a23c;
+    outline-offset: 3px;
 }
 
-aside {
-    background-color: white;
-    margin: 0 30px 20px 30px;
-    padding: 10px 20px;
-}
-
+/* Footer */
 footer {
-    background-color: #1f4e79;
+    background-color: #172b4d;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    margin-top: 25px;
 }
